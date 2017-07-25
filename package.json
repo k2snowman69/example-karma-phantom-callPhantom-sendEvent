@@ -1,0 +1,39 @@
+{
+  "name": "example-karma-phantom-callphantom-sendevent",
+  "version": "0.1.0",
+  "description": "Example project demonstating the sendEvent function on Phantom through Karma",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rickyp-ms/example-karma-phantom-callPhantom-sendEvent.git"
+  },
+  "keywords": [
+    "javascript",
+    "phantom",
+    "karma",
+    "callphantom",
+    "sendevent"
+  ],
+  "author": "Ricky Patel @rickyp-ms",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rickyp-ms/example-karma-phantom-callPhantom-sendEvent/issues"
+  },
+  "homepage": "https://github.com/rickyp-ms/example-karma-phantom-callPhantom-sendEvent",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "gulp": "^3.9.0",
+    "gulp-open": "^1.0.0",
+    "karma": "^1.7.0",
+    "karma-chai": "^0.1.0",
+    "karma-coverage": "^1.1.1",
+    "karma-mocha": "^1.3.0",
+    "karma-phantomjs-launcher": "~1.0.4",
+    "karma-trx-reporter": "^0.2.9",
+    "mocha": "^3.4.2",
+    "phantomjs": "^2.1.7"
+  }
+}
