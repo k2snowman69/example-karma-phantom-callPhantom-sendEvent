@@ -78,12 +78,12 @@ module.exports = function (config) {
         options: {
           windowName: "options.windowName",
           onPageCreated: function (newPage) {
-            console.log("RICKYP - received event forpage created");
+            console.log("YAY!!! - received event forpage created");
             newPage.windowName = "options.windowName.onPageCreated";
             newPage.onCallback = function (data) {
-              console.log("RICKYP - received event for - " + data);
+              console.log("YAY!!! - received event for - " + data);
               if (data.type === "log") {
-                console.log("RICKYP - GOT A LOG!!!");
+                console.log("YAY!!! - GOT A LOG!!!");
               }
             };
           }
