@@ -74,29 +74,14 @@ module.exports = function (config) {
     customLaunchers: {
       'PhantomJS_custom': {
         base: 'PhantomJS',
-        windowName: "base",
         options: {
-          windowName: "options.windowName",
           onPageCreated: function (newPage) {
-            console.log("YAY!!! - received event forpage created");
-            newPage.windowName = "options.windowName.onPageCreated";
             newPage.onCallback = function (data) {
-              console.log("YAY!!! - received event for - " + data);
-              if (data.type === "log") {
-                console.log("YAY!!! - GOT A LOG!!!");
-              }
-              if (data.type === "tab") {
-                console.log("YAY!!! - SENDING A TAB EVENT!!!");
-                newPage.sendEvent('keypress', page.event.key.Tab, null, null, page.event.modifier.alt);
-              }
               if (data.type === 'render') {
-                console.log("YAY!!! - Taking a screenshot!!!");
-                // Prevent us from writing to any absolute paths or ones that go up a directory
-                // DEV: Unforuntately, this throw will be silent
-                if (data.filename.indexOf('/') !== -1 || data.filename.indexOf('..') !== -1) {
-                  throw new Error('Malicious filename found: ' + data.filename);
-                }
-                newPage.render('path/to/screenshots/' + data.filename + '.png');
+                newPage.render('foo.png');
+              }
+              else if (data.type === 'tab') {
+                newPage.sendEvent('keypress', page.event.key.Tab, null, null, null);
               }
             };
           }
