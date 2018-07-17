@@ -1,39 +1,40 @@
 {
   "name": "example-karma-phantom-callphantom-sendevent",
-  "version": "0.1.0",
-  "description": "Example project demonstating the sendEvent function on Phantom through Karma",
+  "version": "1.0.0",
+  "description": "Example project demonstating the sendEvent function on Phantom through Karma for accessibility tabbing and screenshotting",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "karma start ./karma.conf.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rickyp-ms/example-karma-phantom-callPhantom-sendEvent.git"
+    "url": "git+https://github.com/k2snowman69/example-karma-phantom-callPhantom-sendEvent.git"
   },
   "keywords": [
     "javascript",
     "phantom",
     "karma",
     "callphantom",
-    "sendevent"
+    "sendevent",
+    "tab",
+    "tabbing",
+    "screenshot"
   ],
-  "author": "Ricky Patel @rickyp-ms",
+  "author": "Ricky Patel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rickyp-ms/example-karma-phantom-callPhantom-sendEvent/issues"
+    "url": "https://github.com/k2snowman69/example-karma-phantom-callPhantom-sendEvent/issues"
   },
-  "homepage": "https://github.com/rickyp-ms/example-karma-phantom-callPhantom-sendEvent",
+  "homepage": "https://github.com/k2snowman69/example-karma-phantom-callPhantom-sendEvent",
   "devDependencies": {
-    "chai": "^3.4.1",
-    "gulp": "^3.9.0",
-    "gulp-open": "^1.0.0",
-    "karma": "^1.7.0",
+    "chai": "^4.1.2",
+    "karma": "^2.0.4",
     "karma-chai": "^0.1.0",
-    "karma-coverage": "^1.1.1",
+    "karma-coverage": "^1.1.2",
     "karma-mocha": "^1.3.0",
     "karma-phantomjs-launcher": "~1.0.4",
     "karma-trx-reporter": "^0.2.9",
-    "mocha": "^3.4.2",
+    "mocha": "^5.2.0",
     "phantomjs": "^2.1.7"
   }
 }
